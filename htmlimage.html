@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>image</title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTMAvgwR5zkFsUG3Jp7V0hI8lJwWgW4AUPRg&s">       
+</head>
+<body>
+    <img src="leaf.avif" alt="no image" usemap="#change">
+    <map name="change">
+        <area shape="rect" coords="20 30 250 180" href="#">
+        <area shape="rect" coords="34 44 270 250" href="https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649">
+        <area shape="circle" coords="40 50 0 0" href="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg">
+        <area shape="rect" coords="" href="">
+    </map>
+    <picture>
+        <source srcset="leaf.avif" media="(min-width: 1400px)"/>
+        <source srcset="https://img.freepik.com/free-photo/fresh-yellow-daisy-single-flower-close-up-beauty-generated-by-ai_188544-15543.jpg" media="(min-width: 1200px)"/>
+        <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQUQ6g6NjGqj3qncgsJGpxzzRrL_qDAc1qQ&s" media="(min-width: 800px)"/>
+        <source srcset="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" media="(min-width: 600px)"/>
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" alt="example"/>
+      </picture>
+</body>
+</html>

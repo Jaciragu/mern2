@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slam Book</title>
+    <link rel="icon" href="https://down-ph.img.susercontent.com/file/ph-11134207-7r98w-lv2m8eap47iq27_tn.webp">
+</head>
+<style>
+    body{
+        background-image: url(bgred.jpeg);
+        background-repeat: no-repeat; 
+        background-size: cover; 
+         /* width: 1000px; */
+        height: 730px; 
+    }
+    form{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .forms{
+        width: 550px;
+        height: 450px;
+        background-color: rgb(205, 134, 134);
+        opacity: 0.5;
+        color: black;
+        font-weight: bolder;
+        border: 5px solid black;
+        border-radius: 5px;
+        font-size: large;
+        position: absolute;
+        margin-left: 450px;
+        margin-top: 150px;
+    }
+    #about{
+        height: 70px;
+        width: 200px;
+    }
+    #submit{
+        width: 100px;
+        height: 30px;
+        font-size: large;
+        margin-left: 140px;
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <div class="forms">
+        <h2 style="text-align: center;">SLAM BOOK</h2>
+    <form action="">
+        <label for="name">Name: </label>
+        <input id="name" type="text"><br><br>
+        <label for="dob">Date of Birth: </label>
+        <input id="dob" type="date"><br><br>
+        <label for="hobby">Hobbies: </label>
+        <input type="checkbox">Singing
+        <input type="checkbox">Dancing
+        <input type="checkbox">Drawing
+        <input type="checkbox">Reading
+        <br><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female <br><br>
+        <label for="dept">Department: </label>
+        <select name="dept" id="dept">
+            <option value="">Choose</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">ECE</option>
+            <option value="CSE">ECE</option>
+            <option value="MECH">ECE</option>
+        </select>
+        <br><br>
+        <label for="about">Tell me about yourself: </label>
+        <input id="about" type="text"><br><br>
+        <input id="submit" type="submit" value="submit">
+    </form>
+    </div>
+</body>
+</html>

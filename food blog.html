@@ -3,9 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Food Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    /* Reset some basic styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+    margin-left: 10px;
+}
+
+header nav {
+    float: right;
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background: #555;
+}
+
+/* Hero section */
+#hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+/* Content section */
+#content {
+    padding: 20px 0;
+}
+
+#content .post {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#content .post h2 {
+    margin-bottom: 10px;
+}
+
+#content .post img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+</style>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>My Food Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My Food Blog</h2>
+            <p>Discover delicious recipes and culinary tips!</p>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+            <article class="post">
+                <h2>Delicious Spaghetti Recipe</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQDcoLZwXAafN16_aGlY-S9g7QTYMrVTcmA&s" alt="Delicious Spaghetti">
+                <p>Learn how to make delicious spaghetti with this simple recipe...</p>
+            </article>
+            <article class="post">
+                <h2>Refreshing Summer Salad</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaTkghN6AdoK17QVpv5mhxMT8eWzXK-s_bZg&s" alt="Summer Salad">
+                <p>Beat the heat with this refreshing and healthy summer salad...</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Food Blog</p>
+        </div>
+    </footer>
 </body>
 </html>

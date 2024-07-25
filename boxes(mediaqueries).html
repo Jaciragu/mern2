@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .one, .two, .three, .four {
+            width: 25%;
+            height: 100px;
+            float: left;
+        }
+        .one {
+            background-color: pink;
+        }
+        .two {
+            background-color: blue;
+        }
+        .three {
+            background-color: yellow;
+        }
+        .four {
+            background-color: red;
+        }
+        @media screen and (max-width: 1000px) {
+            .one, .two, .three, .four {
+                width: 50%;
+            }
+            .three, .four {
+                margin-top: 0;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .one, .two, .three, .four {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</div>
+</body>
+</html>
